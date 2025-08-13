@@ -24,7 +24,7 @@ public class EmailService {
         ObjectMapper objectMapper = new ObjectMapper();
         String message = null;
         try {
-            message = objectMapper.writeValueAsString(objectMapper);
+            message = objectMapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Json 직렬화 실패");
         }
